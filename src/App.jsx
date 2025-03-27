@@ -5,7 +5,7 @@ import { Navbar } from "./components/Navbar/Navbar";
 import "./styles/App.css";
 import article1Img from "./assets/images/article1.jpg";
 // import article3Img from "./assets/images/article3.jpg";
-// import { Counter } from "./components/Counter/Counter";
+import { Counter } from "./components/Counter/Counter";
 
 class App extends React.Component {
   // Método responsável por renderizar o conteúdo HTML do componente
@@ -13,27 +13,18 @@ class App extends React.Component {
     return (
       // Não pode retornar mais de 1 tag
       <>
-        <Navbar />
+        {/* <Navbar /> */}
 
-        {/* <Counter /> */}
+        <Counter />
 
-        <section id="articles">
+        {/* <section id="articles">
           <Article
             title="Designing Dashboards"
             provider="NASA"
             description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab commodi minus amet neque minima officiis reiciendis earum, unde nisi inventore repellendus eaque nesciunt, voluptas repellat odio cupiditate quam ipsam! Facere!"
             thumbnail={article1Img}
           />
-        </section>
-
-        <section id="articles">
-          <Article
-            title="Designing Dashboards"
-            provider="NASA"
-            description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab commodi minus amet neque minima officiis reiciendis earum, unde nisi inventore repellendus eaque nesciunt, voluptas repellat odio cupiditate quam ipsam! Facere!"
-            thumbnail={article1Img}
-          />
-        </section>
+        </section> */}
       </>
     );
   }
