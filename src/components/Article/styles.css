@@ -3,15 +3,10 @@
   gap: 1rem;
 }
 
-#article .image {
+/* #article .image {
   overflow: hidden;
   align-items: center;
-}
-
-#article img {
-  height: 120px;
-  width: 300px;
-}
+} */
 
 #article .article-infos h2 {
   font-size: 30px;
@@ -24,4 +19,18 @@
   font-weight: 400;
   color: #8695a4;
   margin-bottom: 1rem;
+}
+
+#article .article-infos p {
+  text-align: justify;
+}
+
+#article .article-infos a {
+  color: white;
+}
+
+#article img {
+  /* height: 120px; */
+  width: 350px;
+  border-radius: 5px;
 }

@@ -9,7 +9,7 @@ import "./styles.css";
 // }
 
 // export function Article(props)
-export function Article({ title, provider, description, thumbnail }) {
+export function Article({ url, title, provider, description, thumbnail }) {
   // desestruturar
   return (
     <article id="article">
@@ -17,7 +17,10 @@ export function Article({ title, provider, description, thumbnail }) {
         <img src={thumbnail} alt="" />
       </div>
       <div className="article-infos">
-        <h2>{title}</h2>
+        <a href={url}>
+          <h2>{title}</h2>
+        </a>
+
         <h3>{provider}</h3>
         <p>{description}</p>
       </div>
